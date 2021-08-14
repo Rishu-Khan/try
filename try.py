@@ -213,14 +213,14 @@ def menu():
   print ('\033[0;91m [•] DOB  : \033[0;92m'+tl)
   print ('\033[1;91m╚═════════════•ೋೋ•══════════════╝')
   
-  print ('\033[1;91m╔══════════•ೋೋ•═══════════╗')
-  print ('\n\033[0;91m[1] \033[0;92mCrack ID From Friends')
+  print ('\033[1;91m╔════════════•ೋೋ•═════════════╗')
+  print ('\n\033[0;91m [1] \033[0;92mCrack ID From Friends')
   print (' \033[0;91m [2] \033[0;92mCrack ID From Public')
   print (' \033[0;91m [3] \033[0;92mCrack ID From Followers')
   print (' \033[0;91m [4] \033[0;92mCrack ID From Like')
   print (' \033[0;91m [5] \033[0;92mView Crack Results')
   print (' \033[0;91m [0] \033[0;92mDelete Token/Cookies')
-  print ('\033[1;91m╚══════════•ೋೋ•═══════════╝')
+  print ('\033[1;91m╚═══════════•ೋೋ•════════════╝')
   mn=raw_input(" \033[0;91m [•]choose : ")
   if mn=="":
 	print (' \033[0;91m [•]Fill it Correctly')
@@ -405,7 +405,7 @@ def publik():
 		time.sleep(0.01)
 		loginn()
 	try:
-		idt = raw_input("\n\033[0;92m [•]Profil ID : ")
+		idt = raw_input("\n\033[0;92m  [•]Profil ID : ")
 		limit = '5000'
 		file = 'dump.txt'
 		try:
@@ -529,12 +529,12 @@ def free(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 def metode():
-    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
-    print ('\n\033[0;91m[1] \033[0;92mLogin mbasic.facebook')
+    print ('\033[1;91m╔════════════•ೋೋ•═══════════╗')
+    print ('\n\033[0;91m [1] \033[0;92mLogin mbasic.facebook')
     print (' \033[0;91m [2] \033[0;92mLogin m.facebook')
     print (' \033[0;91m [3] \033[0;92mLogin free.facebook')
-    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
-    md = raw_input(' *-> Input : ')
+    print ('\033[1;91m╚════════════•ೋೋ•═══════════╝')
+    md = raw_input(' \033[0;91m [•] Choose : ')
     if md == '':
         os.sys.exit()
     elif md == '1' or md == '01':
