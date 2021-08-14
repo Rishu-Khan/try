@@ -529,12 +529,12 @@ def free(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 def metode():
-	print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
-    print ('\n\033[0;91m [1] \033[0;92mLogin mbasic.facebook')
+    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
+    print ('\n \033[0;91m  [1] \033[0;92mLogin mbasic.facebook')
     print (' \033[0;91m    [2] \033[0;92mLogin m.facebook')
     print (' \033[0;91m    [3] \033[0;92mLogin free.facebook')
     print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
-    md = raw_input(' *-> Input : ')
+    md = raw_input('\033[0;91m[•]Choose : ')
     if md == '':
         os.sys.exit()
     elif md == '1' or md == '01':
