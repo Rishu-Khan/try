@@ -117,10 +117,10 @@ def komen(): # Boleh Di Tanbahin Jangan Di Ganti #
 def login():
     os.system('clear')
     print logo
-    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
+    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
     print " \033[1;91m [A] \033[1;92mLogin Using Token"
     print " \033[1;91m [B] \033[1;92mLogin Using Cookies"
-    print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
+    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
     lg = raw_input('\n\033[0;91m [•] choose : ')
     if lg == '':
         os.sys.exit()
@@ -405,7 +405,7 @@ def publik():
 		time.sleep(0.01)
 		loginn()
 	try:
-		idt = raw_input("\n\033[0;92m[•]Profil ID : ")
+		idt = raw_input("\n\033[0;92m [•]Profil ID : ")
 		limit = '5000'
 		file = 'dump.txt'
 		try:
@@ -427,7 +427,7 @@ def publik():
 			print("\r \033[0;92m [•]Gather %s ID"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
 		ys.close()
 		os.rename(qq,file)
-		print("\r\033[0;92m [•] ID : %s          "%(len(id)))
+		print("\r\033[0;92m  [•] ID : %s          "%(len(id)))
 		metode()
 		
 	except Exception as e:
@@ -529,11 +529,11 @@ def free(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 def metode():
-    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
-    print ('\n\033[0;91m [1] \033[0;92mLogin mbasic.facebook')
-    print (' \033[0;91m  [2] \033[0;92mLogin m.facebook')
-    print (' \033[0;91m  [3] \033[0;92mLogin free.facebook')
-    print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
+    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
+    print ('\n\033[0;91m[1] \033[0;92mLogin mbasic.facebook')
+    print (' \033[0;91m [2] \033[0;92mLogin m.facebook')
+    print (' \033[0;91m [3] \033[0;92mLogin free.facebook')
+    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
     md = raw_input(' *-> Input : ')
     if md == '':
         os.sys.exit()
