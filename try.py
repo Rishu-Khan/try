@@ -411,7 +411,7 @@ def publik():
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print(" \033[0;91m [•]Nama : "+op["name"])
+			print(" \033[0;91m [•]Nama : "+op["\033[0;92m"name"])
 		except KeyError:
 			print(' \033[0;91m [•]Profile ID Missing')
 			raw_input(" \033[0;91m [•]Return")
@@ -422,12 +422,12 @@ def publik():
 		qq = ('pblk.txt').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
-			id.append(a['id']+"<=>"+a['name'])
-			ys.write(a['id']+"<=>"+a['name']+'\n')
+			id.append(a['id']+"<=>"+a['\033[0;92mname'])
+			ys.write(a['id']+"<=>"+a['\033[0;92mname']+'\n')
 			print("\r \033[0;91m [•]Gather %s ID"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
 		ys.close()
 		os.rename(qq,file)
-		print("\r\033[0;91m [•] ID : %s          "%(len(id)))
+		print("\r\033[0;91m [•] ID : \033[0;92m%s          "%(len(id)))
 		metode()
 		
 	except Exception as e:
