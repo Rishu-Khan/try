@@ -117,10 +117,10 @@ def komen(): # Boleh Di Tanbahin Jangan Di Ganti #
 def login():
     os.system('clear')
     print logo
-    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
-    print " \033[1;91m  [A] \033[1;92mLogin Using Token"
-    print " \033[1;91m  [B] \033[1;92mLogin Using Cookies"
-    print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
+    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
+    print " \033[1;91m [A] \033[1;92mLogin Using Token"
+    print " \033[1;91m [B] \033[1;92mLogin Using Cookies"
+    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
     lg = raw_input('\n\033[0;91m [•] choose : ')
     if lg == '':
         os.sys.exit()
@@ -208,19 +208,19 @@ def menu():
   os.system("clear")
   print logo
   print ('\033[1;91m╔═════════════•ೋೋ•══════════════╗')
-  print (' \033[0;91m [•]Nama : '+nm)
-  print (' \033[0;91m [•]   Id : '+id)
-  print (' \033[0;91m [•] Date of birth : '+tl)
+  print (' \033[0;91m [•] Nama : \033[0;92m'+nm)
+  print (' \033[0;91m [•]   Id : \033[0;93m'+id)
+  print (' \033[0;91m [•] DOB  : \033[0;92m'+tl)
   print ('\033[1;91m╚═════════════•ೋೋ•══════════════╝')
   
-  print ('\033[1;91m╔══════════•ೋೋ•═══════════╗')
-  print ('\n\033[0;91m[1] \033[0;92mCrack ID From Friends')
-  print (' \033[0;91m   [2] \033[0;92mCrack ID From Public')
-  print (' \033[0;91m   [3] \033[0;92mCrack ID From Followers')
-  print (' \033[0;91m   [4] \033[0;92mCrack ID From Like')
-  print (' \033[0;91m   [5] \033[0;92mView Crack Results')
-  print (' \033[0;91m   [0]  \033[0;92mDelete Token/Cookies')
-  print ('\033[1;91m╚══════════•ೋೋ•═══════════╝')
+  print ('\033[1;91m╔════════════•ೋೋ•═════════════╗')
+  print ('\n\033[0;91m [1] \033[0;92mCrack ID From Friends')
+  print (' \033[0;91m  [2] \033[0;92mCrack ID From Public')
+  print (' \033[0;91m  [3] \033[0;92mCrack ID From Followers')
+  print (' \033[0;91m  [4] \033[0;92mCrack ID From Like')
+  print (' \033[0;91m  [5] \033[0;92mView Crack Results')
+  print (' \033[0;91m  [0] \033[0;92mDelete Token/Cookies')
+  print ('\033[1;91m╚════════════•ೋೋ•═════════════╝')
   mn=raw_input(" \033[0;91m [•]choose : ")
   if mn=="":
 	print (' \033[0;91m [•]Fill it Correctly')
@@ -237,7 +237,7 @@ def menu():
     print ('\n\033[0;91m[1] See Results Ok')
     print ('\033[0;91m    [2] View Cp . Results')
     print ('\033[0;91m    [0] Return\n')
-    hs = raw_input(' *-> Input : ')
+    hs = raw_input(' \033[0;91m [•] Choose : ')
     if hs == '':
         menu()
     elif hs == '1' or hs == '01':
@@ -266,7 +266,7 @@ def ok():
                 print (' \033[0;92m [•]Results Ok None')
 		os.sys.exit()
 	except Exception as e:
-	        print (' \033[0;92m [•]Hasil Ok Tidak Ada')
+	        print (' \033[0;92m [•]Results Ok None')
 	        os.sys.exit()
 def cp():
         try:
@@ -304,7 +304,7 @@ def teman():
                 for a in z['data']:
                         id.append(a['id']+"<=>"+a['name'])
                         ys.write(a['id']+"<=>"+a['name']+'\n')
-                        print("\r *-> Mengumpukan  %s ID\r"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
+                        print("\r \033[0;92m collect  %s ID\r"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
                 ys.close()
                 os.rename(qq,file)
 		print " "
@@ -405,7 +405,7 @@ def publik():
 		time.sleep(0.01)
 		loginn()
 	try:
-		idt = raw_input("\n *-> Profil ID : ")
+		idt = raw_input("\n \033[0;92m[•]Profil ID : ")
 		limit = '5000'
 		file = 'dump.txt'
 		try:
