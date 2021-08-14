@@ -208,9 +208,9 @@ def menu():
   os.system("clear")
   print logo
   print ('\033[1;91m╔═════════════•ೋೋ•══════════════╗')
-  print ('\033[0;91m  [•]Nama : '\033[0;92m+nm)
-  print ('\033[0;91m  [•]Akun ID : '\033[0;92m+id)
-  print ('\033[0;91m  [•]Date of birth : '\033[0;92m+tl)
+  print ('\033[0;91m  [•]Nama : 'm+nm)
+  print ('\033[0;91m  [•]Akun ID : '+id)
+  print ('\033[0;91m  [•]Date of birth : '+tl)
   print ('\033[1;91m╚═════════════•ೋೋ•══════════════╝')
   
   print ('\033[1;91m╔══════════•ೋೋ•═══════════╗')
