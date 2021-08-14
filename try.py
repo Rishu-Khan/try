@@ -118,8 +118,8 @@ def login():
     os.system('clear')
     print logo
     print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
-    print " \033[1;91m  [A] \033[1;92mLogin Using Token"
-    print " \033[1;91m  [B] \033[1;92mLogin Using Cookies"
+    print " \033[1;91m [A] \033[1;92mLogin Using Token"
+    print " \033[1;91m [B] \033[1;92mLogin Using Cookies"
     print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
     lg = raw_input('\n\033[0;91m [•] choose : ')
     if lg == '':
@@ -208,18 +208,18 @@ def menu():
   os.system("clear")
   print logo
   print ('\033[1;91m╔═════════════•ೋೋ•══════════════╗')
-  print ('\033[0;91m  [•] Nama : \033[0;92m'+nm)
-  print ('\033[0;91m  [•]    ID     : \033[0;92m'+id)
-  print ('\033[0;91m  [•]  DOB   : \033[0;92m'+tl)
+  print ('\033[0;91m [•] Nama : \033[0;92m'+nm)
+  print ('\033[0;91m [•] ID   : \033[0;92m'+id)
+  print ('\033[0;91m [•] DOB  : \033[0;92m'+tl)
   print ('\033[1;91m╚═════════════•ೋೋ•══════════════╝')
   
   print ('\033[1;91m╔══════════•ೋೋ•═══════════╗')
   print ('\n\033[0;91m[1] \033[0;92mCrack ID From Friends')
-  print (' \033[0;91m   [2] \033[0;92mCrack ID From Public')
-  print (' \033[0;91m   [3] \033[0;92mCrack ID From Followers')
-  print (' \033[0;91m   [4] \033[0;92mCrack ID From Like')
-  print (' \033[0;91m   [5] \033[0;92mView Crack Results')
-  print (' \033[0;91m   [0] \033[0;92mDelete Token/Cookies')
+  print (' \033[0;91m [2] \033[0;92mCrack ID From Public')
+  print (' \033[0;91m [3] \033[0;92mCrack ID From Followers')
+  print (' \033[0;91m [4] \033[0;92mCrack ID From Like')
+  print (' \033[0;91m [5] \033[0;92mView Crack Results')
+  print (' \033[0;91m [0] \033[0;92mDelete Token/Cookies')
   print ('\033[1;91m╚══════════•ೋೋ•═══════════╝')
   mn=raw_input(" \033[0;91m [•]choose : ")
   if mn=="":
@@ -529,10 +529,10 @@ def free(em,pas,hosts):
 		return {"status":"cp","email":em,"pass":pas,"cookies":r.cookies.get_dict()}
 	else:return {"status":"error","email":em,"pass":pas}
 def metode():
-	print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
+    print ('\033[1;91m╔═════════•ೋೋ•═════════╗')
     print ('\n\033[0;91m [1] \033[0;92mLogin mbasic.facebook')
-    print (' \033[0;91m    [2] \033[0;92mLogin m.facebook')
-    print (' \033[0;91m    [3] \033[0;92mLogin free.facebook')
+    print (' \033[0;91m  [2] \033[0;92mLogin m.facebook')
+    print (' \033[0;91m  [3] \033[0;92mLogin free.facebook')
     print ('\033[1;91m╚═════════•ೋೋ•═════════╝')
     md = raw_input(' *-> Input : ')
     if md == '':
