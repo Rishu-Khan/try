@@ -262,7 +262,7 @@ def pilihmetode(file):
 	print(" [1] \033[1;92mMethod Api \033[1;93m(Fast)")
 	print(" [2] \033[1;92mMetode Free.Fb \033[1;93m(Slow)")
 	print("\033[1;97m------------------------------------------"
-	z = raw_input(" [?] \033[1;93mChoose:\033[1;93m ")
+	z = raw_input(" [?] \033[1;93mChoose:\033[1;90m ")
 	if z == "":
 		print(" [!] \033[1;91mChoose the right one!!")
 		pilihmetode(file)
@@ -278,7 +278,7 @@ def bapi():
 	ask = raw_input(' [?] \033[1;93mPassword Choose/Auto? [c/t]: ')
 	if ask == 'C' or ask == 'c':
 		manualbapi()
-	print("------------------------------------------------")
+	print("\033[1;97m------------------------------------------------")
 
 	def main(arg):
 		global ok,cp,ua, loop
