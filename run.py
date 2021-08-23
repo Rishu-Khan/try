@@ -257,7 +257,7 @@ def infologin():
 	menu()
 	
 def pilihmetode(file):
-	print(""+p+"       \033[1;90m[CRACK METHOD]
+	print(""+p+"       \033[1;90m[CRACK METHOD]")
 	print("\033[1;97m----------------------------------------")
 	print(" [1] \033[1;92mMethod Api \033[1;93m(Fast)")
 	print(" [2] \033[1;92mMetode Free.Fb \033[1;93m(Slow)")
