@@ -1,5 +1,5 @@
 #!/usr/bin/python2
-# coding=utf-RISHU KHAN
+# coding=utf-8
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, requests, uuid
 from multiprocessing.pool import ThreadPool
