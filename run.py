@@ -1,17 +1,5 @@
 #!/usr/bin/python2
-# coding=utf-8
-# OPEN SOURCE KODE
-################################################
-# Author               : Fall Xavier                                                            #
-# Nama Script     : Simple Crack                                                       #
-# Github               : https://github.com/Fall-Xavier                          #
-# Facebook          : https://www.facebook.com/Fall.Xavier.XX      #
-# Instagram         : https://www.instagram.com/fall.xavier           #
-# WhatsApp         : 085229323951                                                   #
-# Python version : 2.7                                                                        #
-#                                                                                                           #
-#                THANKS TO DAPUNTA,LATIP,ZAKI,IWAN                      #
-################################################
+# coding=utf-RISHU KHAN
 
 import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, requests, uuid
 from multiprocessing.pool import ThreadPool
@@ -183,16 +171,15 @@ def menu():
         sys.exit()
 
     logo()
-    print(" [*] ---------------------------------------------")
     print(" [*] \033[1;91mID         : \033[1;90m"+id)
     print(" [*] \033[1;91mIP         : \033[1;90m"+ip)
-    print"\n     \033[1;92m[\033[1;91mWelcome \033[1;90m"+nama+"\033[1;92m]"
-    print ("------------------------------------------------")
+    print"\n             \033[1;92m[\033[1;91mWelcome \033[1;90m"+nama+"\033[1;92m]"
+    print ("\033[1;97m------------------------------------------------")
     print(" \033[1;93m[1]. \033[1;92mCrack Public id")
     print(" \033[1;93m[2]. \033[1;92mSee Crack Result")
     print(" \033[1;93m[3]. \033[1;92mReport Bugs")
     print(" \033[1;93m[0]. \033[1;92mRemove Token")
-    print("------------------------------------------------")
+    print("\033[1;97m------------------------------------------------")
     asw = raw_input("\n [?] \033[1;93mChoose :\033[1;90m ")
     if asw == "":
     	menu()
@@ -230,12 +217,11 @@ def publik():
         na = i['name']
         nm = na.rsplit(' ')[0]
         id.append(uid + '|' + nm)
-    print""
     print' [+] \033[1;91mtotal id -> \033[1;90m' + str(len(id))
     pilihmetode(ppk)
     
 def cekakun():
-    anjg = raw_input('\n [?] \033[1;93mChoose : ')
+    anjg = raw_input('\n [?] \033[1;93mChoose :\033[1;90m ')
     if anjg == '':
         menu()
     elif anjg == '01' or anjg == '1':
@@ -271,15 +257,12 @@ def infologin():
 	menu()
 	
 def pilihmetode(file):
-	print("")
-	print(""+p+"       \033[1;90m[CRACK METHOD]")
-	print("")
-	print("----------------------------------------")
-	print(" [1] \033[1;92mMethod Api (\033[1;91mFast)")
-	print(" [2] \033[1;92mMetode Free.Fb (\033[1;91mSlow)")
-	print("------------------------------------------")
-	print("")
-	z = raw_input(" [?] \033[1;93mChoose: ")
+	print(""+p+"       \033[1;90m[CRACK METHOD]
+	print("\033[1;97m----------------------------------------")
+	print(" [1] \033[1;92mMethod Api \033[1;93m(Fast)")
+	print(" [2] \033[1;92mMetode Free.Fb \033[1;93m(Slow)")
+	print("\033[1;97m------------------------------------------"
+	z = raw_input(" [?] \033[1;93mChoose:\033[1;93m ")
 	if z == "":
 		print(" [!] \033[1;91mChoose the right one!!")
 		pilihmetode(file)
@@ -292,11 +275,10 @@ def pilihmetode(file):
 		exit()
 	
 def bapi():
-	ask = raw_input(' [?] \033[1;93mPassword Auto/Choose? [A/C]: ')
-	if ask == 'A' or ask == 'a':
+	ask = raw_input(' [?] \033[1;93mPassword Choose/Auto? [c/t]: ')
+	if ask == 'C' or ask == 'c':
 		manualbapi()
 	print("------------------------------------------------")
-	print("")
 
 	def main(arg):
 		global ok,cp,ua, loop
@@ -364,9 +346,7 @@ def manualbapi():
     pw = raw_input(' [?] \033[1;92mCreate Password : ').split(',')
     if len(pw) == 0:
         exit('[!] \033[1;91mCorrect Content, Cannot Be Empty!')
-    print("\n [!] apabila tidak ada hasil silahkan aktifkan mode pesawat selama 5-10 detik")
-    print("------------------------------------------------")
-    print("")
+    print("\033[1;97m---------------------------------------------')
 
     def main(arg):
         global loop
@@ -416,11 +396,10 @@ def manualbapi():
     exit()
     
 def freefb():
-    ask = raw_input(' [?] Password Auto/Choose? [A/C] : ')
-    if ask == 'A' or ask == 'a':
+    ask = raw_input(' [?] Password Choose/Auto? [c/t] : ')
+    if ask == 'C' or ask == 'c':
         manualfreefb()
-    print("------------------------------------------------")
-    print("")
+    print("\033[1;97m------------------------------------------------")
     
     def main(arg):
         global loop
