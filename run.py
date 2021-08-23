@@ -126,8 +126,7 @@ def tokenz():
 		os.system('clear')
 		logo()
 		print""+p+""
-		print" [+] How To get Tokens   https://youtu.be/IdxphPBMMTU"
-		token = raw_input('\n\033[1;92m [+] Enter Token : ')
+		token = raw_input('\n [+] \033[1;92mEnter Token :\033[1;90m ')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
@@ -184,20 +183,17 @@ def menu():
         sys.exit()
 
     logo()
-    print(" "+p+"\033[1;93m[*] \033[1;91mAuthor   \033[1;93m: \033[1;92mRISHU KHNA") 
-    print(" \033[1;93m[*] \033[1;91mFACEBOOK     \033[1;93m: \033[1;92mRishu 3:)")
     print(" [*] ---------------------------------------------")
     print(" [*] \033[1;91mID         : \033[1;90m"+id)
     print(" [*] \033[1;91mIP         : \033[1;90m"+ip)
-    print"\n \033[1;92mWelcome \033[1;90m"+nama+"\033[1;91m ]"
-    print("")
+    print"\n     \033[1;92m[\033[1;91mWelcome \033[1;90m"+nama+"\033[1;92m]"
     print ("------------------------------------------------")
-    print(" \033[1;91m[1]. \033[1;92mCrack Public id")
-    print(" \033[1;91m[2]. \033[1;92mSee Crack Result")
-    print(" \033[1;91m[3]. \033[1;92mReport Bugs")
-    print(" ["+m+"\033[1;91m[0]"+p+"]. \033[1;92mRemove Token")
+    print(" \033[1;93m[1]. \033[1;92mCrack Public id")
+    print(" \033[1;93m[2]. \033[1;92mSee Crack Result")
+    print(" \033[1;93m[3]. \033[1;92mReport Bugs")
+    print(" \033[1;93m[0]. \033[1;92mRemove Token")
     print("------------------------------------------------")
-    asw = raw_input("\n [?] \033[1;93mChoose : ")
+    asw = raw_input("\n [?] \033[1;93mChoose :\033[1;90m ")
     if asw == "":
     	menu()
     elif asw == "1":
@@ -215,8 +211,8 @@ def menu():
     	menu() 
     
 def publik():
-    print(" [*] \033[1;92mType 'me' Friendlist Clone")
-    idt = raw_input(' [+] \033[1;92mPublic Id : ')
+    print(" \033[1;93m[*] \033[1;92mType 'me' Friendlist Clone")
+    idt = raw_input(' \033[1;93m[+] \033[1;92mPublic Id : ')
     if idt == "":
     	menu()
     try:
