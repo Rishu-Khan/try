@@ -347,7 +347,7 @@ def manualbapi():
     pw = raw_input(' [?] \033[1;92mCreate Password : ').split(',')
     if len(pw) == 0:
         exit('[!] \033[1;91mCorrect Content, Cannot Be Empty!')
-      print('\033[1;97m---------------------------------------------')
+      print("\033[1;97m---------------------------------------------")
 
     def main(arg):
         global loop
