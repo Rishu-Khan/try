@@ -261,8 +261,9 @@ def pilihmetode(file):
 	print("\033[1;97m----------------------------------------")
 	print(" [1] \033[1;92mMethod Api \033[1;93m(Fast)")
 	print(" [2] \033[1;92mMetode Free.Fb \033[1;93m(Slow)")
-	print("\033[1;97m------------------------------------------"
-	z = raw_input(" [?] \033[1;93mChoose: ")
+	print("\033[1;97m------------------------------------------")
+        print("")
+	z = raw_input(" [?] \033[1;93mChoose: \033[1;93m ")
 	if z == "":
 		print(" [!] \033[1;91mChoose the right one!!")
 		pilihmetode(file)
